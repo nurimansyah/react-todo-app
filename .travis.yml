@@ -1,0 +1,33 @@
+# Distribution
+dist: trusty
+
+# API Programming Language
+language: php
+php:
+  - "7.1"
+
+# App Programming Language
+node_js:
+  - "node"
+
+# Branching
+branches:
+  only:
+    - master
+    - develop
+
+# Install
+install:
+  - cp api/.env.example api/.env
+  - cd api && composer self-update && composer install --no-interaction
+  - cd ../app && npm install
+
+#services:
+#  - mysql
+
+# Test Script
+script:
+  - cd api && vendor/bin/phpunit
+  - cd ../app
+  - npm run test
+  - npm run acceptance
