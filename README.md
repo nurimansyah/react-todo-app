@@ -1,6 +1,10 @@
 # Learn React: To Do App #
 Ini merupakan repositori pembelajaran pertama gw untuk mengetahui bagaimana membuat web app menggunakan Framework React JS.
 
+## Build Status ##
+Travis CI  
+[![Build Status](https://travis-ci.org/nurimansyah/react-todo-app.svg?branch=master)](https://travis-ci.org/nurimansyah/react-todo-app)
+
 ## Getting Started ##
 TBA
 
