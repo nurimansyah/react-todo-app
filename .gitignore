@@ -1,0 +1,6 @@
+# Ignoring Package
+node_modules
+vendor
+
+# Ignore logs
+app/test/acceptance/logs/*.png

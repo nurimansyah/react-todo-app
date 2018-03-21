@@ -1,0 +1,17 @@
+{
+  "tests": "./test/acceptance/*.test.js",
+  "timeout": 10000,
+  "output": "./test/acceptance/logs",
+  "helpers": {
+    "Puppeteer": {
+      "url": "http://localhost:8000",
+      "show": false
+    }
+  },
+  "include": {
+    "I": "./test/acceptance/steps_file.js"
+  },
+  "bootstrap": false,
+  "mocha": {},
+  "name": "react-todo-app"
+}
