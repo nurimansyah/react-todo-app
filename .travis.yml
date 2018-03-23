@@ -20,6 +20,7 @@ branches:
 env:
   - DB_USERNAME=root
   - DB_PASSWORD=
+  - DB_DATABASE=todo
 
 # Before Install
 before_install:
