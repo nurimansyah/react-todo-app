@@ -18,8 +18,8 @@ branches:
 
 # ENV
 env:
-  - DB_USERNAME="root"
-  - DB_PASSWORD=""
+  - DB_USERNAME=root
+  - DB_PASSWORD=
 
 # Before Install
 before_install:
@@ -31,7 +31,7 @@ install:
   - cd api && composer self-update && composer install --no-interaction
   - cd ../app && npm install
 
-#services:
+services:
  - mysql
 
 # Test Script
