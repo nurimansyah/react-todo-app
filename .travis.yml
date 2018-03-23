@@ -29,7 +29,6 @@ before_install:
 
 # Install
 install:
-  - cp api/.env.example api/.env
   - cd api && composer self-update && composer install --no-interaction
   - cd ../app && npm install
 
