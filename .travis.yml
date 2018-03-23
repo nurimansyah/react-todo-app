@@ -16,14 +16,24 @@ branches:
     - master
     - develop
 
+# ENV
+env:
+  global:
+    - DB_USERNAME=root
+    - DB_PASSWORD=
+    - DB_DATABASE=todo
+
+# Before Install
+before_install:
+  - mysql -e 'CREATE DATABASE todo;'
+
 # Install
 install:
-  - cp api/.env.example api/.env
   - cd api && composer self-update && composer install --no-interaction
   - cd ../app && npm install
 
-#services:
-#  - mysql
+services:
+ - mysql
 
 # Test Script
 script:
